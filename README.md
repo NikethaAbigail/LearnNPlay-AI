@@ -39,3 +39,27 @@ Welcome to **AI Learn & Play**, a smart trivia game that adapts to your knowledg
 ```python
 game.adjust_difficulty(streak)
 
+## 🧠 Intelligent Difficulty System
+
+Your winning streak decides your challenge level:
+
+- 🟢 **Streak < 3** → Easy  
+- 🟡 **Streak 3–4** → Medium  
+- 🔴 **Streak ≥ 5** → Hard
+
+---
+---
+
+## 🔮 Future Additions
+
+- 🧠 **AI-powered hint generator**  
+- 📊 **Scoreboard & user tracking**  
+- 🗣️ **Text-to-speech question reading**  
+- 🌐 **Multiplayer mode**
+
+---
+
+## 👩‍💻 Contributing
+
+Got ideas or improvements?  
+**Pull requests and issues are welcome!**
