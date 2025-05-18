@@ -49,7 +49,7 @@ Welcome to **AI Learn & Play**, a smart trivia game that adapts to your knowledg
 ![Multiple Choice Question](mcqs.png)
 
 ### 🏆 Score & Feedback
-![Score Feedback](result.png)
+![Score Feedback](result (1).png)
 
 
 ## 🧠 Intelligent Difficulty System
