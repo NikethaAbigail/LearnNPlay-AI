@@ -36,20 +36,20 @@ Welcome to **AI Learn & Play**, a smart trivia game that adapts to your knowledg
 ## 📸 Screenshots
 
 ### 🖥️ Home Screen
-![Home Screen](images/screenshot1.png)
+![Home Screen](mainpage.png)
 
 ### 🎮 Game option and choice Selection
-![Game option](images/screenshot2.png)
-![Game choice](images/screenshot2.png)
+![Game option](choice.png)
+![Game choice](categories.png)
 
 ### ❓ Sample Question - True/False
-![True/False Question](images/screenshot3.png)
+![True/False Question](truefalse.png)
 
 ### 🧠 Sample Question - Multiple Choice
-![Multiple Choice Question](images/screenshot4.png)
+![Multiple Choice Question](mcqs.png)
 
 ### 🏆 Score & Feedback
-![Score Feedback](images/screenshot5.png)
+![Score Feedback](result.png)
 
 
 ## 🧠 Intelligent Difficulty System
