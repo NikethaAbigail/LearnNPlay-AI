@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-xl mx-auto mt-12 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-xl font-bold mb-4 text-blue-700">Category: {{ question.category }}</h2>
+        <p class="text-lg mb-6">{{ question.question }}</p>
+        <form action="/question" method="post" class="space-y-4">
+            {% if game_type == "1" %}
+                <div class="space-x-4">
+                    <label><input type="radio" name="answer" value="True" required> True</label>
+                    <label><input type="radio" name="answer" value="False" required> False</label>
+                </div>
+            {% else %}
+                <div class="space-y-2">
+                    <label><input type="radio" name="answer" value="A" required> A: {{ question["Option A"] }}</label><br>
+                    <label><input type="radio" name="answer" value="B" required> B: {{ question["Option B"] }}</label><br>
+                    <label><input type="radio" name="answer" value="C" required> C: {{ question["Option C"] }}</label><br>
+                    <label><input type="radio" name="answer" value="D" required> D: {{ question["Option D"] }}</label>
+                </div>
+            {% endif %}
+            <div class="text-center mt-4">
+                <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

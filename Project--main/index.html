@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-Powered Learning Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function updateCategories() {
+            const gameType = document.getElementById('game_type').value;
+            const tfCategories = [
+                "General Knowledge", "Entertainment: Film",
+                "Entertainment: Music", "Entertainment: Video Games", "Science: Computers",
+                "Geography", "History"
+            ];
+            const mcCategories = ["Computer Science", "Logical Reasoning","Entertainment: Books"];
+            const catSelect = document.getElementById('category');
+            catSelect.innerHTML = "";
+            let categories = (gameType === "1") ? tfCategories : mcCategories;
+            categories.forEach(cat => {
+                let option = document.createElement("option");
+                option.value = cat;
+                option.text = cat;
+                catSelect.add(option);
+            });
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-xl mx-auto mt-12 p-6 bg-white shadow-lg rounded-xl">
+        <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">AI-Powered Learning Game</h1>
+        <form action="/start" method="POST" class="space-y-4">
+            <div>
+                <label class="block font-semibold mb-1">Game Type</label>
+                <select name="game_type" id="game_type" class="w-full p-2 border rounded" onchange="updateCategories()" required>
+                    <option value="" disabled selected>Select a game type</option>
+                    <option value="1">True/False</option>
+                    <option value="2">Multiple Choice</option>
+                </select>
+            </div>
+            <div>
+                <label class="block font-semibold mb-1">Category</label>
+                <select name="category" id="category" class="w-full p-2 border rounded" required>
+                    <!-- JS fills this -->
+                </select>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 mt-4 rounded hover:bg-blue-700 transition">
+                    Start Game
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
